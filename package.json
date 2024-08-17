@@ -9,7 +9,9 @@
     "ooxml": "./dist/npm/bin/ooxml-cli.js"
   },
   "scripts": {
-    "lint": "npx prettier . --check"
+    "lint": "npx prettier . --check",
+    "build": "npm run build:npm",
+    "build:npm": "rollup -c rollup.config.ts --configPlugin typescript"
   },
   "files": [
     "./dist/npm",
@@ -18,6 +20,8 @@
   ],
   "devDependencies": {
     "@ooxml-tools/file": "file:../file",
+    "@ooxml-tools/render": "file:../render",
+    "@ooxml-tools/validate": "file:../validate",
     "@rollup/plugin-typescript": "^11.1.6",
     "@rollup/plugin-virtual": "^3.0.2",
     "@tsconfig/node22": "^22.0.0",
@@ -27,6 +31,7 @@
     "rollup-plugin-copy": "^3.5.0",
     "rollup-plugin-dts": "^6.1.1",
     "rollup-plugin-typescript-paths": "^1.5.0",
+    "tslib": "^2.6.3",
     "tsx": "^4.16.2"
   },
   "engines": {

@@ -3,8 +3,8 @@ import { relative } from 'path';
 import yargs from 'yargs/yargs';
 import * as commands from "./commands";
 import * as fileCommands from "@ooxml-tools/file/commands";
-// import * as renderCommand from "@ooxml-tools/render/commands";
-// import * as validateCommand from "@ooxml-tools/validate/commands";
+import * as renderCommand from "@ooxml-tools/render/command";
+import * as validateCommand from "@ooxml-tools/validate/command";
 
 const scriptName = relative(process.cwd(), process.argv[1] ?? "")
 
@@ -25,11 +25,10 @@ yargs(process.argv.slice(2))
     .command(fileCommands.read.cmd, fileCommands.read.desc, fileCommands.read.builder, fileCommands.read.handler)
     .command(fileCommands.write.cmd, fileCommands.write.desc, fileCommands.write.builder, fileCommands.write.handler)
     // Render commands
-    // .command(renderCommand.cmd, renderCommand.desc, renderCommand.builder, renderCommand.handler)
+    .command(renderCommand.cmd.replace("$0", "render"), renderCommand.desc, renderCommand.builder, renderCommand.handler)
     // Validate commands
-    // .command(validateCommand.cmd, validateCommand.desc, validateCommand.builder, validateCommand.handler)
+    .command(validateCommand.cmd.replace("$0", "validate"), validateCommand.desc, validateCommand.builder, validateCommand.handler)
     // Local commands    
-    // ==========
     .command(commands.import.cmd, commands.import.desc, commands.import.builder, commands.import.handler)
     .command(commands.ci.cmd, commands.ci.desc, commands.ci.builder, commands.ci.handler)
     .command(commands.open.cmd, commands.open.desc, commands.open.builder, commands.open.handler)
