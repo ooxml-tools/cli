@@ -20,9 +20,6 @@
     "./README.md"
   ],
   "devDependencies": {
-    "@ooxml-tools/file": "file:../file",
-    "@ooxml-tools/render": "file:../render",
-    "@ooxml-tools/validate": "file:../validate",
     "@rollup/plugin-typescript": "^11.1.6",
     "@rollup/plugin-virtual": "^3.0.2",
     "@tsconfig/node22": "^22.0.0",
@@ -39,6 +36,9 @@
     "node": ">=20.x"
   },
   "dependencies": {
+    "@ooxml-tools/file": "^0.1.1",
+    "@ooxml-tools/render": "^0.1.0",
+    "@ooxml-tools/validate": "^0.1.12",
     "execa": "^9.3.0",
     "open": "^10.1.0",
     "yargs": "^17.7.2"
