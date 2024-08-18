@@ -1,7 +1,7 @@
 #!/usr/bin/env ./node_modules/.bin/tsx
 import { relative } from 'path';
 import yargs from 'yargs/yargs';
-import * as commands from "./commands";
+// import * as commands from "./commands";
 import * as fileCommands from "@ooxml-tools/file/commands";
 import * as renderCommand from "@ooxml-tools/render/command";
 import * as validateCommand from "@ooxml-tools/validate/command";
@@ -29,8 +29,8 @@ yargs(process.argv.slice(2))
     // Validate commands
     .command(validateCommand.cmd.replace("$0", "validate"), validateCommand.desc, validateCommand.builder, validateCommand.handler)
     // Local commands    
-    .command(commands.import.cmd, commands.import.desc, commands.import.builder, commands.import.handler)
-    .command(commands.ci.cmd, commands.ci.desc, commands.ci.builder, commands.ci.handler)
-    .command(commands.open.cmd, commands.open.desc, commands.open.builder, commands.open.handler)
+    // .command(commands.import.cmd, commands.import.desc, commands.import.builder, commands.import.handler)
+    // .command(commands.ci.cmd, commands.ci.desc, commands.ci.builder, commands.ci.handler)
+    // .command(commands.open.cmd, commands.open.desc, commands.open.builder, commands.open.handler)
     .help()
     .argv
