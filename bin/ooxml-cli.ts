@@ -1,5 +1,4 @@
 #!/usr/bin/env ./node_modules/.bin/tsx
-import { relative } from 'path';
 import yargs from 'yargs/yargs';
 // import * as commands from "./commands";
 import * as fileCommands from "@ooxml-tools/file/commands";
