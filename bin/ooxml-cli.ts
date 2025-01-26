@@ -3,6 +3,7 @@ import { relative } from 'path';
 import yargs from 'yargs/yargs';
 // import * as commands from "./commands";
 import * as fileCommands from "@ooxml-tools/file/commands";
+import * as unitsCommands from "@ooxml-tools/units/commands";
 import * as renderCommands from "@ooxml-tools/render/commands";
 import * as validateCommand from "@ooxml-tools/validate/command";
 
@@ -29,6 +30,8 @@ yargs(process.argv.slice(2))
     .command(renderCommands.support.cmd, renderCommands.support.desc, renderCommands.support.builder, renderCommands.support.handler)
     // Validate commands
     .command(validateCommand.cmd.replace("$0", "validate"), validateCommand.desc, validateCommand.builder, validateCommand.handler)
+    // Units commands
+    .command(unitsCommands.convert.cmd, unitsCommands.convert.desc, unitsCommands.convert.builder, unitsCommands.convert.handler)
     // Local commands    
     // .command(commands.import.cmd, commands.import.desc, commands.import.builder, commands.import.handler)
     // .command(commands.ci.cmd, commands.ci.desc, commands.ci.builder, commands.ci.handler)
