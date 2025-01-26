@@ -7,7 +7,7 @@ import * as unitsCommands from "@ooxml-tools/units/commands";
 import * as renderCommands from "@ooxml-tools/render/commands";
 import * as validateCommand from "@ooxml-tools/validate/command";
 
-const scriptName = relative(process.cwd(), process.argv[1] ?? "")
+const scriptName = "ooxml";
 
 yargs(process.argv.slice(2))
     .usage(`${scriptName} <command> [args]`)
