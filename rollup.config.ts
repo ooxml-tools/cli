@@ -7,9 +7,7 @@ const outputDir = join(import.meta.dirname, "/dist/npm/");
 export default [
   {
     input: {
-      // "index": "src/index.ts",
       "bin/ooxml-cli": "bin/ooxml-cli.ts",
-      // "command": "src/command.ts",
     },
     output: {
       dir: outputDir,
