@@ -13,10 +13,9 @@ yargs(process.argv.slice(2))
   // HACK to remove script-name from commands
   .scriptName("")
   .example([
-    [`${scriptName} open ./test.docx word/document.xml`],
-    [`${scriptName} cat ./test.docx word/document.xml`],
-    [`${scriptName} render --app msword,pages .test.docx`],
-    [`${scriptName} validate .test.docx`],
+    [`${scriptName} init ./test.docx`],
+    [`${scriptName} read ./test.docx word/document.xml`],
+    [`${scriptName} render ./test.docx`],
   ])
   // File commands
   .command(
