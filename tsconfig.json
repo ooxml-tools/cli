@@ -19,7 +19,6 @@
     "downlevelIteration": true,
     "baseUrl": ".",
     "paths": {}
-
   },
   "exclude": ["dist", "node_modules", "old", "dotnet"],
   "include": ["**/*.ts", "**/*.tsx"]

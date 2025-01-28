@@ -1,4 +1,4 @@
-import shebang from 'rollup-plugin-preserve-shebang';
+import shebang from "rollup-plugin-preserve-shebang";
 import typescript from "@rollup/plugin-typescript";
 import json from "@rollup/plugin-json";
 import { join } from "path";
@@ -16,8 +16,8 @@ export default [
     },
     external: ["yargs/yargs", "yargs/helpers", "fs/promises"],
     plugins: [
-      shebang({     
-        shebang: '#!/usr/bin/env node'
+      shebang({
+        shebang: "#!/usr/bin/env node",
       }),
       json(),
       typescript({ tsconfig: "./tsconfig.json" }),
