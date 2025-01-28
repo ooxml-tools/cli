@@ -4,7 +4,7 @@ import yargs from 'yargs/yargs';
 import * as fileCommands from "@ooxml-tools/file/commands";
 import * as unitsCommands from "@ooxml-tools/units/commands";
 import * as renderCommands from "@ooxml-tools/render/commands";
-import * as validateCommand from "@ooxml-tools/validate/command";
+// import * as validateCommand from "@ooxml-tools/validate/command";
 
 const scriptName = "ooxml";
 
@@ -24,11 +24,12 @@ yargs(process.argv.slice(2))
     .command(fileCommands.list.cmd, fileCommands.list.desc, fileCommands.list.builder, fileCommands.list.handler)
     .command(fileCommands.read.cmd, fileCommands.read.desc, fileCommands.read.builder, fileCommands.read.handler)
     .command(fileCommands.write.cmd, fileCommands.write.desc, fileCommands.write.builder, fileCommands.write.handler)
+    .command(fileCommands.init.cmd, fileCommands.init.desc, fileCommands.init.builder, fileCommands.init.handler)
     // Render commands
     .command(renderCommands.render.cmd, renderCommands.render.desc, renderCommands.render.builder, renderCommands.render.handler)
     .command(renderCommands.support.cmd, renderCommands.support.desc, renderCommands.support.builder, renderCommands.support.handler)
     // Validate commands
-    .command(validateCommand.cmd.replace("$0", "validate"), validateCommand.desc, validateCommand.builder, validateCommand.handler)
+    // .command(validateCommand.cmd.replace("$0", "validate"), validateCommand.desc, validateCommand.builder, validateCommand.handler)
     // Units commands
     .command(unitsCommands.convert.cmd, unitsCommands.convert.desc, unitsCommands.convert.builder, unitsCommands.convert.handler)
     // Local commands    
