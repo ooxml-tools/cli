@@ -23,6 +23,7 @@ npx @ooxml-tools/cli --help
 #   init <docxpath>              initializes a blank file (docx)
 #   render <filepath>            render files
 #   support <filepath>           list supported apps for <filepath>
+#   validate <filepath>          validate docx files
 #   convert <from> <to> <value>  convert between units
 #
 # Options:

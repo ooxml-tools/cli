@@ -68,7 +68,12 @@ yargs(process.argv.slice(2))
     renderCommands.support.handler,
   )
   // Validate commands
-  .command(validateCommand.cmd.replace("$0", "validate"), validateCommand.desc, validateCommand.builder, validateCommand.handler)
+  .command(
+    validateCommand.cmd.replace("$0", "validate"),
+    validateCommand.desc,
+    validateCommand.builder,
+    validateCommand.handler,
+  )
   // Units commands
   .command(
     unitsCommands.convert.cmd,
