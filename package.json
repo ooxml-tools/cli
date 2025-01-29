@@ -1,6 +1,6 @@
 {
   "name": "@ooxml-tools/cli",
-  "version": "0.2.8",
+  "version": "0.3.0",
   "license": "MIT",
   "type": "module",
   "main": "./dist/npm/index.js",
