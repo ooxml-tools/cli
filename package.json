@@ -42,6 +42,7 @@
     "@ooxml-tools/file": "^0.2.7",
     "@ooxml-tools/render": "^0.3.1",
     "@ooxml-tools/units": "^0.1.4",
+    "@ooxml-tools/validate": "^0.2.2",
     "execa": "^9.3.0",
     "open": "^10.1.0",
     "yargs": "^17.7.2"
