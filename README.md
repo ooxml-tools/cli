@@ -1,4 +1,10 @@
-# <img alt="@ooxml-tools/cli" height="56" src="https://github.com/user-attachments/assets/aab3d389-6c30-4d5b-932d-2abe7734e21e" />
+<h1>
+    <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="https://ooxml-tools.github.io/design/images/cli-dark.png">
+        <source media="(prefers-color-scheme: light)" srcset="https://ooxml-tools.github.io/design/images/cli-light.png">
+        <img alt="@ooxml-tools/cli" height="56" src="https://ooxml-tools.github.io/design/images/cli-light.png">
+    </picture>
+</h1>
 
 Command line tools for dealing with Office Open XML files in nodejs.
 
