@@ -1,5 +1,6 @@
 {
   "name": "@ooxml-tools/cli",
+  "description": "Command line tools for dealing with Office Open XML files in node.js",
   "version": "0.3.0",
   "license": "MIT",
   "type": "module",
