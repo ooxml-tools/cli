@@ -6,6 +6,10 @@
   "type": "module",
   "main": "./dist/npm/index.js",
   "types": "./dist/npm/types.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ooxml-tools/cli"
+  },
   "bin": {
     "ooxml": "./dist/npm/bin/ooxml-cli.js"
   },
@@ -42,9 +46,9 @@
   },
   "dependencies": {
     "@ooxml-tools/file": "^0.6.0",
-    "@ooxml-tools/render": "^0.4.0",
+    "@ooxml-tools/render": "^0.5.1",
     "@ooxml-tools/units": "^0.4.6",
-    "@ooxml-tools/validate": "^0.4.3",
+    "@ooxml-tools/validate": "^0.4.4",
     "execa": "^9.3.0",
     "open": "^11.0.0",
     "yargs": "^18.0.0"
