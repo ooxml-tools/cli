@@ -15,15 +15,15 @@ npx @ooxml-tools/cli --help
 # ooxml <command> [args]
 #
 # Commands:
-#   pack <docxpath> <dirpath>    pack directory to docx file
-#   unpack <docxpath> <dirpath>  unpack docx to a directory
-#   list <docxpath>              list files in docx
-#   read <docxpath> <filepath>   read file inside docx to sdtout
-#   write <docxpath> <filepath>  create/override file in docx
-#   init <docxpath>              initializes a blank file (docx)
-#   render <filepath>            render files
-#   support <filepath>           list supported apps for <filepath>
-#   validate <filepath>          validate docx files
+#   pack <ooxmlpath> <dirpath>    pack directory to docx file
+#   unpack <ooxmlpath> <dirpath>  unpack docx to a directory
+#   list <ooxmlpath>              list files in docx
+#   read <ooxmlpath> <filepath>   read file inside docx to sdtout
+#   write <ooxmlpath> <filepath>  create/override file in docx
+#   init <ooxmlpath>              initializes a blank file (docx)
+#   render <ooxmlpath>            render files
+#   support <ooxmlpath>           list supported apps for <ooxmlpath>
+#   validate <ooxmlpath>          validate docx files
 #   convert <from> <to> <value>  convert between units
 #
 # Options:
