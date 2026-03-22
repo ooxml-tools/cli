@@ -1,4 +1,4 @@
-#!/usr/bin/env ./node_modules/.bin/tsx
+#!/usr/bin/env NODE_NO_WARNINGS=1 ./node_modules/.bin/tsx --trace-deprecation
 import yargs from "yargs/yargs";
 // import * as commands from "./commands";
 import * as fileCommands from "@ooxml-tools/file/commands";
