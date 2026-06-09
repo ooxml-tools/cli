@@ -9,17 +9,17 @@ importers:
   .:
     dependencies:
       '@ooxml-tools/file':
-        specifier: ^0.6.1
-        version: 0.6.1
+        specifier: ^0.6.5
+        version: 0.6.5
       '@ooxml-tools/render':
-        specifier: ^0.5.2
-        version: 0.5.2
+        specifier: ^0.5.3
+        version: 0.5.3
       '@ooxml-tools/units':
+        specifier: ^0.5.1
+        version: 0.5.1
+      '@ooxml-tools/validate':
         specifier: ^0.4.6
         version: 0.4.6
-      '@ooxml-tools/validate':
-        specifier: ^0.4.4
-        version: 0.4.4
       execa:
         specifier: ^9.3.0
         version: 9.6.1
@@ -280,24 +280,24 @@ packages:
     engines: {node: '>=20.x'}
     hasBin: true
 
-  '@ooxml-tools/file@0.6.1':
-    resolution: {integrity: sha512-Y+QMAqqI4V9b0fqxu3nZ5nWd5QYa+RTUlI+hybNSovtWS45SINkMzFyI+/AQkHWt+8craGwrA0YIMqYoNZOB3g==}
-    engines: {node: '>=20.x'}
+  '@ooxml-tools/file@0.6.5':
+    resolution: {integrity: sha512-hwAYFAFIWHWSsCLfJua91sGBoGJGhdxDwZmC9U+122yETWqaCMfcw0sf9JnkUICPfbQyv/sgFBnQiwWrpeuXkw==}
+    engines: {node: '>=20.x', pnpm: '>=11'}
     hasBin: true
 
-  '@ooxml-tools/render@0.5.2':
-    resolution: {integrity: sha512-qL/0UCj0q3zVK3copLe01neo7hXKs7VZyF2bpXmVjWe4LYct3gHiapry9D+zVJeksHIQLlWiRgHXBi5RtOC+7Q==}
-    engines: {node: '>=20.x'}
+  '@ooxml-tools/render@0.5.3':
+    resolution: {integrity: sha512-hsaMEKC/yypPtUaMhOjnQ7fgxtlBg+VqUS6syLqnZtypWlcR8DPPfJSCTaGBMr7ndZpq6jJeuUKzGVC+S26qzg==}
+    engines: {node: '>=20.x', pnpm: '>=11'}
     hasBin: true
 
-  '@ooxml-tools/units@0.4.6':
-    resolution: {integrity: sha512-nCN36G5JrHTnI8X5U0Zd9AidwNRTc199iivhlnjAQsz6YIzvUiuQFvZspCM/1973MvqLG/zBiRg7P/krC23sAA==}
-    engines: {node: '>=20.x'}
+  '@ooxml-tools/units@0.5.1':
+    resolution: {integrity: sha512-yrgSRCcivHv3zkq/uQMxT/+6khDNn6fPJtvDFbODJhQw4q8RzllXFjWb6fCZ4V7Qdz/DyChbQCnkdUH73kpREw==}
+    engines: {node: '>=20.x', pnpm: '>=11'}
     hasBin: true
 
-  '@ooxml-tools/validate@0.4.4':
-    resolution: {integrity: sha512-Bnar8e7Xezr5X0uP81Eztv9MSJz2AqGLYLTPEhl6d5Y/NhHHi0LfTpCngaLiQL4ny0QZh78IXtM6LgOfVIZA8A==}
-    engines: {node: '>=20.x'}
+  '@ooxml-tools/validate@0.4.6':
+    resolution: {integrity: sha512-1nE9jaCFAs74Bm6KmpXsqZ5p7myFV52iX0IcqfHeSNavQxv/GESyJ0red6vAU3imiHJO/M5AB4K288Huu9Uogw==}
+    engines: {node: '>=20.x', pnpm: '>=11'}
     hasBin: true
 
   '@rollup/plugin-json@6.1.0':
@@ -1453,14 +1453,14 @@ snapshots:
       typescript: 5.9.3
       yargs: 17.7.2
 
-  '@ooxml-tools/file@0.6.1':
+  '@ooxml-tools/file@0.6.5':
     dependencies:
       glob: 13.0.6
       jszip: 3.10.1
       typescript: 5.9.3
       yargs: 18.0.0
 
-  '@ooxml-tools/render@0.5.2':
+  '@ooxml-tools/render@0.5.3':
     dependencies:
       '@google-cloud/local-auth': 3.0.1
       '@ooxml-tools/file': 0.2.10
@@ -1474,14 +1474,14 @@ snapshots:
       - encoding
       - supports-color
 
-  '@ooxml-tools/units@0.4.6':
+  '@ooxml-tools/units@0.5.1':
     dependencies:
       glob: 13.0.6
       jszip: 3.10.1
       typescript: 5.9.3
       yargs: 18.0.0
 
-  '@ooxml-tools/validate@0.4.4':
+  '@ooxml-tools/validate@0.4.6':
     dependencies:
       chalk: 5.6.2
       yargs: 18.0.0

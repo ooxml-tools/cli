@@ -1,2 +1,7 @@
 allowBuilds:
   esbuild: true
+minimumReleaseAgeExclude:
+- "@ooxml-tools/file"
+- "@ooxml-tools/render"
+- "@ooxml-tools/units"
+- "@ooxml-tools/validate"
