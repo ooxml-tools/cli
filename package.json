@@ -41,8 +41,10 @@
     "tslib": "^2.6.3",
     "tsx": "^4.16.2"
   },
+  "packageManager": "pnpm@11.2.0",
   "engines": {
-    "node": ">=20.x"
+    "node": ">=20.x",
+    "pnpm": ">=11"
   },
   "dependencies": {
     "@ooxml-tools/file": "^0.6.1",
